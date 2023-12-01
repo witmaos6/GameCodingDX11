@@ -1,0 +1,6 @@
+﻿  compilation object save succeeded; see C:\Users\159rj\source\repos\GameCodingDX11\Binaries\Default.cso
+  Game.cpp
+C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\Game.cpp(56,38): warning C4267: 'argument': conversion from 'size_t' to 'UINT', possible loss of data
+  GameCodingDX11.cpp
+  pch.cpp
+  GameCodingDX11.vcxproj -> C:\Users\159rj\source\repos\GameCodingDX11\Binaries\GameCodingDX11.exe
