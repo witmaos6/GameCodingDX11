@@ -4,6 +4,8 @@
 Graphics::Graphics(HWND hwnd)
 {
 	_hwnd = hwnd;
+	_width = GWinSizeX;
+	_height = GWinSizeY;
 
 	CreateDeviceAndSwapChain(); // 생성자에서 멤버 함수 호출은 가상함수만 아니라면 큰 문제는 없다고 한다.
 	CreateRenderTargetView();
@@ -82,8 +84,8 @@ void Graphics::SetViewport()
 {
 	_viewport.TopLeftX = 0.f;
 	_viewport.TopLeftY = 0.f;
-	_viewport.Width = static_cast<float>(GWinSizeX);
-	_viewport.Height = static_cast<float>(GWinSizeY);
+	_viewport.Width = static_cast<float>(_width);
+	_viewport.Height = static_cast<float>(_height);
 	_viewport.MinDepth = 0.f;
 	_viewport.MaxDepth = 1.f;
 }

@@ -1,2 +1,10 @@
-﻿  Graphics.cpp
+﻿  Game.cpp
+  GameCodingDX11.cpp
+  Graphics.cpp
+  IndexBuffer.cpp
+  InputLayout.cpp
+  SimpleMath.cpp
+  VertexBuffer.cpp
+  pch.cpp
+DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' or at ''; linking object as if no debug info
   GameCodingDX11.vcxproj -> C:\Users\159rj\source\repos\GameCodingDX11\Binaries\GameCodingDX11.exe
