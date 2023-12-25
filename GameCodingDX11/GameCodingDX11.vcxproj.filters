@@ -24,6 +24,30 @@
     <Filter Include="Source Files\99.Headers\Utils">
       <UniqueIdentifier>{81cf8968-6220-40bc-8ffe-2ca0eaf68de3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\00.Engine">
+      <UniqueIdentifier>{e2f6b296-555a-4029-97c5-21fb385115fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline">
+      <UniqueIdentifier>{9a75b039-b918-4388-8409-3bd9a09964ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline\00.Geometry">
+      <UniqueIdentifier>{770d0ff9-4cc4-43b0-8cf6-82f08bde2867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline\01.InputAssembler">
+      <UniqueIdentifier>{f25cec82-e14b-4065-a49a-5a3296c02914}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline\02.VertexShader">
+      <UniqueIdentifier>{53dbcead-8a41-4741-a821-3442d4762264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline\03.Rasterizer">
+      <UniqueIdentifier>{328cc650-facf-4c52-beda-f667fc058f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline\04.PixelShader">
+      <UniqueIdentifier>{a6419ed1-e909-4b6b-b6b8-1ea247bf8a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\00.Engine\Pipeline\05.OutputMerger">
+      <UniqueIdentifier>{b3f502e0-bdd8-4d08-8957-28d856a30fc2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCodingDX11.h">
@@ -56,6 +80,9 @@
     <ClInclude Include="SimpleMath.h">
       <Filter>Source Files\99.Headers\Utils</Filter>
     </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Source Files\00.Engine\Pipeline</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GameCodingDX11.rc">
@@ -82,6 +109,9 @@
     </ClCompile>
     <ClCompile Include="SimpleMath.cpp">
       <Filter>Source Files\99.Headers\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source Files\00.Engine\Pipeline</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

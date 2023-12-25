@@ -144,6 +144,7 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameCodingDX11.h" />
+    <ClInclude Include="Graphics.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SimpleMath.h" />
@@ -155,6 +156,7 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameCodingDX11.cpp" />
+    <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="SimpleMath.cpp" />
   </ItemGroup>
