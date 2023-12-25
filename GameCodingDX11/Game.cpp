@@ -26,7 +26,7 @@ void Game::Init(HWND hwnd)
 
 	CreateRasterizerState();
 	CreateSamplerState();
-	//CreateBlendState();
+	CreateBlendState();
 
 	CreateSRV();
 	CreateConstantBuffer();
@@ -34,6 +34,15 @@ void Game::Init(HWND hwnd)
 
 void Game::Update()
 {
+	Matrix matScale = Matrix::CreateScale(_localScale);
+	Matrix matRotation = Matrix::CreateRotationX(_localRotation.x);
+	matRotation *= Matrix::CreateRotationY(_localRotation.y);
+	matRotation *= Matrix::CreateRotationZ(_localRotation.z);
+	Matrix matTranslation = Matrix::CreateTranslation(_localPosition);
+
+	Matrix matWorld = matScale * matRotation * matTranslation;
+	_transformData.matWorld = matWorld;
+
 	D3D11_MAPPED_SUBRESOURCE subResource;
 	ZeroMemory(&subResource, sizeof(subResource));
 
@@ -73,7 +82,7 @@ void Game::Render()
 		// OM
 		_deviceContext->OMSetBlendState(_blendState.Get(), nullptr, 0xFFFFFFFF);
 
-		//_deviceContext->Draw((UINT)_vertices.size(), 0);
+		_deviceContext->Draw((UINT)_vertices.size(), 0);
 		_deviceContext->DrawIndexed((UINT)_indices.size(), 0, 0);
 	}
 
@@ -82,14 +91,14 @@ void Game::Render()
 
 void Game::RenderBegin()
 {
-	_deviceContext->OMSetRenderTargets(1, _renderTargetView.GetAddressOf(), nullptr);
-	_deviceContext->ClearRenderTargetView(_renderTargetView.Get(), _clearColor);
-	_deviceContext->RSSetViewports(1, &_viewport);
+	_deviceContext->OMSetRenderTargets(1, _renderTargetView.GetAddressOf(), nullptr); // 렌더 결과물을 후면 버퍼에 입력
+	_deviceContext->ClearRenderTargetView(_renderTargetView.Get(), _clearColor); // 기본색상 그리기
+	_deviceContext->RSSetViewports(1, &_viewport); // 화면 크기 설정
 }
 
 void Game::RenderEnd()
 {
-	HRESULT hr = _swapChain->Present(1, 0);
+	HRESULT hr = _swapChain->Present(1, 0); // 후면 버퍼를 전면 버퍼로 복사
 	CHECK(hr);
 }
 
@@ -178,7 +187,7 @@ void Game::CreateGeometry()
 	{
 		D3D11_BUFFER_DESC desc;
 		ZeroMemory(&desc, sizeof(desc));
-		desc.Usage = D3D11_USAGE_IMMUTABLE;
+		desc.Usage = D3D11_USAGE_IMMUTABLE; // GPU ReadOnly
 		desc.BindFlags = D3D11_BIND_VERTEX_BUFFER;
 		desc.ByteWidth = (uint32)(sizeof(Vertex) * _vertices.size());
 

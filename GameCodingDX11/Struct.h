@@ -9,8 +9,9 @@ struct Vertex
 	Vec2 uv; // min : 0.f, max : 1.0f
 };
 
-struct TransformData // struct alignas(32) TransformData
+struct TransformData
 {
-	Vec3 offset;
-	float dummy; // Possible replace padding
+	Matrix matWorld = Matrix::Identity;
+	Matrix matView = Matrix::Identity;
+	Matrix matProjection = Matrix::Identity;
 };

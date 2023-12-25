@@ -29,7 +29,7 @@ private:
 	void CreateRasterizerState();
 	void CreateSamplerState();
 	void CreateBlendState();
-	void CreateSRV(); // shader resource view
+	void CreateSRV(); // Shader Resource View
 
 	void CreateConstantBuffer();
 
@@ -80,8 +80,12 @@ private:
 	ComPtr<ID3D11BlendState> _blendState = nullptr;
 
 private:
-	TransformData _transformData;
+	TransformData _transformData; // 메시의 크기, 위치, 회전 값
 	ComPtr<ID3D11Buffer> _constantBuffer;
+
+	Vec3 _localPosition = { 0.f, 0.f, 0.f };
+	Vec3 _localRotation = { 0.f, 0.f, 0.f };
+	Vec3 _localScale = { 1.f, 1.f, 1.f };
 };
 
 
