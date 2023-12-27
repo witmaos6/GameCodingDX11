@@ -11,7 +11,7 @@
 #include <map>
 #include <unordered_map>
 #include <string>
-#include <memory>
+#include <iostream>
 using namespace std;
 
 #include <windows.h>
@@ -42,3 +42,6 @@ using namespace Microsoft::WRL;
 #include "VertexBuffer.h"
 #include "IndexBuffer.h"
 #include "InputLayout.h"
+#include "Geometry.h"
+#include "VertexData.h"
+#include "GeometryHelper.h"

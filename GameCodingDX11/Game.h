@@ -33,10 +33,9 @@ private:
 
 private:
 	// Geometry
-	vector<Vertex> _vertices;
+	shared_ptr<Geometry<VertexTextureData>> _geometry;
+
 	shared_ptr<VertexBuffer> _vertexBuffer;
-	
-	vector<uint32> _indices;
 	shared_ptr<IndexBuffer> _indexBuffer;
 	shared_ptr<InputLayout> _inputLayout;
 
@@ -66,5 +65,3 @@ private:
 	Vec3 _localRotation = { 0.f, 0.f, 0.f };
 	Vec3 _localScale = { 1.f, 1.f, 1.f };
 };
-
-
