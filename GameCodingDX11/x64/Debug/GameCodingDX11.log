@@ -1,4 +1,5 @@
-﻿  ConstantBuffer.cpp
+﻿  BlendState.cpp
+  ConstantBuffer.cpp
   Game.cpp
   GameCodingDX11.cpp
   Geometry.cpp
@@ -6,18 +7,13 @@
   Graphics.cpp
   IndexBuffer.cpp
   InputLayout.cpp
-  pch.cpp
+  Pipeline.cpp
+  RasterizerState.cpp
+  SamplerState.cpp
   Shader.cpp
   SimpleMath.cpp
   Texture.cpp
-DirectXTex_debug.lib(DirectXTexImage.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexImage.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexWIC.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexWIC.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexD3D11.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexD3D11.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexUtil.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexUtil.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexConvert.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexConvert.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexMipMaps.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexMipMaps.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(DirectXTexCompress.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(DirectXTexCompress.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(BC.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(BC4BC5.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC4BC5.obj)' or at ''; linking object as if no debug info
-DirectXTex_debug.lib(BC6HBC7.obj) : warning LNK4099: PDB '' was not found with 'DirectXTex_debug.lib(BC6HBC7.obj)' or at ''; linking object as if no debug info
+  VertexBuffer.cpp
+  VertexData.cpp
+  pch.cpp
   GameCodingDX11.vcxproj -> C:\Users\159rj\source\repos\GameCodingDX11\Binaries\GameCodingDX11.exe
