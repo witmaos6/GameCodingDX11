@@ -23,9 +23,9 @@ private:
 
 private:
 	// Device & SwapChain
-	ComPtr<ID3D11Device> _device = nullptr;
-	ComPtr<ID3D11DeviceContext> _deviceContext = nullptr;
-	ComPtr<IDXGISwapChain> _swapChain = nullptr;
+	ComPtr<ID3D11Device> _device;
+	ComPtr<ID3D11DeviceContext> _deviceContext;
+	ComPtr<IDXGISwapChain> _swapChain;
 
 	/// RTV
 	ComPtr<ID3D11RenderTargetView> _renderTargetView;
