@@ -48,6 +48,9 @@
     <Filter Include="Source Files\00.Engine\Pipeline\05.OutputMerger">
       <UniqueIdentifier>{b3f502e0-bdd8-4d08-8957-28d856a30fc2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\00.Engine\GameObject">
+      <UniqueIdentifier>{a6f467cb-5d1c-4e9a-8393-b7167e2b895c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameCodingDX11.h">
@@ -122,6 +125,9 @@
     <ClInclude Include="Pipeline.h">
       <Filter>Source Files\00.Engine\Pipeline</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Source Files\00.Engine\GameObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="GameCodingDX11.rc">
@@ -190,6 +196,9 @@
     </ClCompile>
     <ClCompile Include="Pipeline.cpp">
       <Filter>Source Files\00.Engine\Pipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\00.Engine\GameObject</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
