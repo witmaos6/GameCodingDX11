@@ -1,4 +1,5 @@
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\BlendState.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\BlendState.obj
+C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\Component.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\Component.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\ConstantBuffer.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\ConstantBuffer.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\Game.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\Game.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\GameCodingDX11.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\GameCodingDX11.obj
@@ -15,5 +16,6 @@ C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\SamplerState.cpp;C:\Us
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\Shader.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\Shader.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\SimpleMath.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\SimpleMath.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\Texture.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\Texture.obj
+C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\Transform.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\Transform.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\VertexBuffer.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\VertexBuffer.obj
 C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\VertexData.cpp;C:\Users\159rj\source\repos\GameCodingDX11\GameCodingDX11\x64\Debug\VertexData.obj

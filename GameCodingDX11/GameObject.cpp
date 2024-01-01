@@ -43,14 +43,15 @@ GameObject::~GameObject()
 
 void GameObject::Update()
 {
-	Matrix matScale = Matrix::CreateScale(_localScale);
-	Matrix matRotation = Matrix::CreateRotationX(_localRotation.x);
-	matRotation *= Matrix::CreateRotationY(_localRotation.y);
-	matRotation *= Matrix::CreateRotationZ(_localRotation.z);
-	Matrix matTranslation = Matrix::CreateTranslation(_localPosition);
+	Vec3 pos = _transform->GetPosition();
+	pos.x += 0.001f;
+	_transform->SetPosition(pos);
 
-	Matrix matWorld = matScale * matRotation * matTranslation;
-	_transformData.matWorld = matWorld;
+	Vec3 rotation = _transform->GetRotation();
+	rotation.z += 0.01f;
+	_transform->SetRotation(rotation);
+
+	_transformData.matWorld = _transform->GetWorldMatrix();
 
 	_constantBuffer->CopyData(_transformData);
 }
